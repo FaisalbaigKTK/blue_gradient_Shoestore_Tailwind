@@ -1,164 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blue Gradient Shoe Store - Tailwind</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Gradient Shoe Store</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-body{font-family:'Poppins',sans-serif}
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-white text-slate-800">
+<body class="m-0 bg-white font-['Poppins',sans-serif] text-[#142238]">
 
-<!-- HERO -->
-<section class="w-[97%] h-auto lg:h-[650px] mx-auto my-6 rounded-xl overflow-hidden flex flex-col lg:flex-row items-center bg-gradient-to-r from-[#050638] via-[#0b54e8] to-[#05c9ec]">
+    <!-- HERO -->
+    <section class="mx-auto mt-6 flex h-[650px] w-[97%] overflow-hidden rounded-[10px] bg-gradient-to-r from-[#050638] via-[#0b54e8] to-[#05c9ec]">
 
-<div class="w-full lg:w-[45%] p-10 lg:pl-20 text-center lg:text-left">
-<h1 class="text-6xl lg:text-8xl font-extrabold leading-tight">
-<span class="text-white">MEN'S</span><br>
-Shoe<br>
-Collections
-</h1>
-</div>
+        <div class="flex w-[58%] shrink-0 items-center pl-[5%]">
+            <h1 class="m-0 text-[clamp(58px,5.1vw,90px)] font-extrabold leading-[1.05] tracking-[-2px]">
+                <span class="text-white">MEN'S</span><br>
+                <span class="text-black">Shoe</span><br>
+                <span class="text-black">Collections</span>
+            </h1>
+        </div>
 
-<div class="w-full lg:w-[55%]">
-<img src="images/hero.jpg" class="w-[90%] mx-auto">
-</div>
-
-</section>
-
-
-<!-- PRODUCTS -->
-<section class="w-[90%] mx-auto text-center py-10">
-
-<h2 class="text-4xl lg:text-5xl font-extrabold">NEW ARRIVALS</h2>
-<p class="text-xl mt-4 mb-16">Trending from new and modern mens style collection</p>
+        <div class="flex w-[42%] shrink-0 items-center justify-center overflow-visible">
+            <img src="images/hero.jpg" alt="Blue men's shoe" class="w-[min(100%,720px)] max-w-none object-contain">
+        </div>
+    </section>
 
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <!-- NEW ARRIVALS -->
+    <section class="mx-auto w-[92%] pt-[72px]">
+
+        <div class="text-center">
+            <h2 class="m-0 text-[45px] font-extrabold leading-tight">NEW ARRIVALS</h2>
+            <p class="mt-4 text-[20px] leading-normal">Trending from new and modern mens style collection</p>
+        </div>
+
+        <div class="mt-[92px] grid grid-cols-1 justify-items-center gap-y-[70px] md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center lg:gap-x-[150px] lg:gap-y-[70px] xl:gap-x-[190px]">
+            
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product1.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product2.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product4.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product5.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product6.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product8.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product9.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="w-full max-w-[412px] justify-self-center overflow-hidden rounded-lg bg-white shadow-[0_8px_24px_rgba(0,0,0,0.22)]">
+            <img src="images/product10.jpg" alt="MENs Shoe" class="h-[365px] w-full object-cover">
+            <div class="px-6 pt-5 pb-5">
+                <h3 class="text-left text-[28px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-3 text-left text-[20px] leading-relaxed">the bulk of the card's content.</p>
+
+                <div class="mt-5 flex items-center gap-1 text-[25px]">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+                <div class="mt-4 flex items-start justify-between">
+                    <div>
+                        <h4 class="text-[20px] font-normal">COLORS</h4>
+                        <div class="mt-2 flex gap-3">
+                            <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                            <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                        </div>
+                    </div>
+                    <strong class="text-[32px] font-bold leading-none">49.99$</strong>
+                </div>
+
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        </div>
+    </section>
 
 
-<!-- PRODUCT CARDS -->
+    <!-- FEATURED -->
+    <section class="mx-auto mt-[120px] w-[92%] pb-2">
 
-<script>
-const products=[
-["product1.jpg"],["product2.jpg"],["product4.jpg"],["product5.jpg"],
-["product6.jpg"],["product8.jpg"],["product9.jpg"],["product10.jpg"]
-];
+        <div class="text-center">
+            <h2 class="m-0 text-[45px] font-extrabold leading-tight">FEATURED</h2>
+            <p class="mt-4 text-[20px] leading-normal">Trending from mens and womens style collection</p>
+        </div>
 
-document.write(products.map(p=>`
-<div class="rounded-lg shadow-xl overflow-hidden pb-5 bg-white">
-<img src="images/${p[0]}" class="h-80 w-full object-cover">
-<h3 class="text-left px-6 pt-5 text-2xl font-bold">MENs Shoe</h3>
-<p class="text-left px-6 mt-2 text-lg">the bulk of the card's content.</p>
-<div class="text-left px-6 py-4 text-2xl text-red-500">★★★<span class="text-black">★★</span></div>
-<div class="flex justify-between items-center px-6">
-<div>
-<h4 class="font-bold">COLORS</h4>
-<div class="flex gap-2 mt-2">
-<span class="w-5 h-5 rounded-full bg-yellow-400"></span>
-<span class="w-5 h-5 rounded-full bg-red-500"></span>
-<span class="w-5 h-5 rounded-full bg-blue-500"></span>
-</div>
-</div>
-<strong class="text-3xl">49.99$</strong>
-</div>
-<button class="w-[90%] mt-8 h-14 rounded-lg text-white text-xl bg-gradient-to-r from-[#080852] to-[#06c5ed]">
-Add to Cart
-</button>
-</div>
-`).join(""))
-</script>
+        <div class="mt-[92px] grid grid-cols-1 gap-[80px] lg:grid-cols-2">
+            
+        <article class="flex min-h-[435px] w-full overflow-hidden rounded-xl bg-white text-left shadow-[0_8px_28px_rgba(0,0,0,0.30)]">
+            <img src="images/featured1.jpg" alt="MENs Shoe" class="w-[40%] object-cover">
+            <div class="w-[60%] p-7">
+                <h3 class="text-[29px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-4 text-[20px] leading-[1.7]">the bulk of the card's content.the bulk of the card's content.the bulk of the card's content.</p>
+                <div class="mt-5 text-[25px] leading-none">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                    <h4 class="text-[20px] font-normal">COLORS</h4>
+                    <strong class="text-[32px]">49.99$</strong>
+                </div>
+                <div class="mt-2 flex gap-3">
+                    <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                </div>
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="flex min-h-[435px] w-full overflow-hidden rounded-xl bg-white text-left shadow-[0_8px_28px_rgba(0,0,0,0.30)]">
+            <img src="images/featured2.jpg" alt="MENs Shoe" class="w-[40%] object-cover">
+            <div class="w-[60%] p-7">
+                <h3 class="text-[29px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-4 text-[20px] leading-[1.7]">the bulk of the card's content.the bulk of the card's content.the bulk of the card's content.</p>
+                <div class="mt-5 text-[25px] leading-none">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                    <h4 class="text-[20px] font-normal">COLORS</h4>
+                    <strong class="text-[32px]">49.99$</strong>
+                </div>
+                <div class="mt-2 flex gap-3">
+                    <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                </div>
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="flex min-h-[435px] w-full overflow-hidden rounded-xl bg-white text-left shadow-[0_8px_28px_rgba(0,0,0,0.30)]">
+            <img src="images/featured3.jpg" alt="MENs Shoe" class="w-[40%] object-cover">
+            <div class="w-[60%] p-7">
+                <h3 class="text-[29px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-4 text-[20px] leading-[1.7]">the bulk of the card's content.the bulk of the card's content.the bulk of the card's content.</p>
+                <div class="mt-5 text-[25px] leading-none">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                    <h4 class="text-[20px] font-normal">COLORS</h4>
+                    <strong class="text-[32px]">49.99$</strong>
+                </div>
+                <div class="mt-2 flex gap-3">
+                    <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                </div>
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        <article class="flex min-h-[435px] w-full overflow-hidden rounded-xl bg-white text-left shadow-[0_8px_28px_rgba(0,0,0,0.30)]">
+            <img src="images/feature4.jpg" alt="MENs Shoe" class="w-[40%] object-cover">
+            <div class="w-[60%] p-7">
+                <h3 class="text-[29px] font-bold leading-tight">MENs Shoe</h3>
+                <p class="mt-4 text-[20px] leading-[1.7]">the bulk of the card's content.the bulk of the card's content.the bulk of the card's content.</p>
+                <div class="mt-5 text-[25px] leading-none">
+                        <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star text-red-500"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                    <h4 class="text-[20px] font-normal">COLORS</h4>
+                    <strong class="text-[32px]">49.99$</strong>
+                </div>
+                <div class="mt-2 flex gap-3">
+                    <span class="h-6 w-6 rounded-full bg-[#ffba00]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#e63950]"></span>
+                    <span class="h-6 w-6 rounded-full bg-[#1769ff]"></span>
+                </div>
+                <button class="mt-7 h-14 w-full rounded-lg bg-gradient-to-r from-[#080852] to-[#06c5ed] text-[22px] text-white transition hover:opacity-90">
+                    Add to Cart
+                </button>
+            </div>
+        </article>
+
+        </div>
+    </section>
 
 
-</div>
-</section>
+    <!-- FOOTER -->
+    <footer class="mt-[100px] overflow-hidden rounded-t-lg bg-[#20252b] text-[#8b96a8]">
 
+        <div class="grid grid-cols-1 gap-10 px-[6%] py-[60px] lg:grid-cols-[1fr_2fr_1.2fr]">
 
+            <div class="flex items-start justify-center lg:justify-start">
+                <img src="images/aboutus.jpg" alt="About us shoe" class="w-[90%] max-w-[520px] object-contain">
+            </div>
 
-<!-- FEATURED -->
+            <div>
+                <h2 class="relative mb-7 inline-block text-[40px] font-semibold text-white">
+                    About Us
+                    <span class="absolute -bottom-3 left-0 h-[4px] w-[95px] rounded bg-white"></span>
+                </h2>
 
-<section class="w-[90%] mx-auto py-20 text-center">
+                <p class="max-w-[650px] text-[20px] leading-[1.7]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
 
-<h2 class="text-5xl font-extrabold">FEATURED</h2>
-<p class="text-xl my-10">Trending from mens and womens style collection</p>
+                <div class="mt-10 flex gap-8 text-3xl">
+                    <span>●</span><span>◎</span><span>♥</span><span>◉</span>
+                </div>
+            </div>
 
+            <div>
+                <h2 class="relative mb-7 inline-block text-[40px] font-semibold text-white">
+                    Get in Touch
+                    <span class="absolute -bottom-3 left-0 h-[4px] w-[95px] rounded bg-white"></span>
+                </h2>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="space-y-3 text-[20px]">
+                    <p>👤 &nbsp; John Doe</p>
+                    <p>📍 &nbsp; Lorem Ipsum, Pakistan</p>
+                    <p>✉ &nbsp; loremipsum@gmail.com</p>
+                    <p>🌐 &nbsp; www.loremipsum.com</p>
+                </div>
 
+                <h2 class="relative mb-5 mt-10 inline-block text-[40px] font-semibold text-white">
+                    Useful links
+                    <span class="absolute -bottom-3 left-0 h-[4px] w-[95px] rounded bg-white"></span>
+                </h2>
 
-<script>
-const featured=["featured1.jpg","featured2.jpg","featured3.jpg","feature4.jpg"];
+                <div class="text-[20px] leading-[1.7]">
+                    <p>About us</p>
+                    <p>Lorem Ipsum</p>
+                    <p>Contact Us</p>
+                    <p>About us</p>
+                    <p>Lorem Ipsum</p>
+                </div>
+            </div>
 
-document.write(featured.map(f=>`
-<div class="flex flex-col md:flex-row rounded-xl shadow-xl overflow-hidden text-left">
-<img src="images/${f}" class="md:w-2/5 object-cover">
-<div class="p-8 md:w-3/5">
-<h3 class="text-3xl font-bold">MENs Shoe</h3>
-<p class="text-lg my-5">the bulk of the card's content.</p>
-<div class="text-red-500 text-xl">★★★★★</div>
-<div class="flex justify-between mt-5">
-<h4 class="font-bold">COLORS</h4>
-<strong class="text-3xl">49.99$</strong>
-</div>
-<button class="w-full mt-8 h-14 rounded-lg text-white text-xl bg-gradient-to-r from-[#080852] to-[#06c5ed]">
-Add to Cart
-</button>
-</div>
-</div>
-`).join(""))
-</script>
+        </div>
 
-
-</div>
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer class="bg-[#20252b] text-slate-300">
-
-<div class="grid lg:grid-cols-3 gap-10 p-10 lg:p-20">
-
-<div>
-<img src="images/aboutus.jpg" class="rounded-xl">
-</div>
-
-<div>
-<h2 class="text-white text-4xl font-bold mb-5">About Us</h2>
-<p class="text-lg leading-8">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p>
-</div>
-
-<div>
-<h2 class="text-white text-3xl font-bold mb-5">Get in Touch</h2>
-<p>👤 John Doe</p>
-<p>📍 Lorem Ipsum, Pakistan</p>
-<p>✉ loremipsum@gmail.com</p>
-<p>🌐 www.loremipsum.com</p>
-
-<h2 class="text-white text-3xl font-bold mt-8">Useful Links</h2>
-<p>About Us</p>
-<p>Contact Us</p>
-</div>
-
-</div>
-
-
-<div class="text-center py-5 text-black text-xl bg-gradient-to-r from-[#0a0757] to-[#00c9ee]">
-© 2023 All rights reserved
-</div>
-
-</footer>
+        <div class="bg-gradient-to-r from-[#0a0757] to-[#00c9ee] py-6 text-center text-[20px] text-black">
+            © 2023 All rights reserved
+        </div>
+    </footer>
 
 </body>
 </html>
